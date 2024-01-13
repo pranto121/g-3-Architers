@@ -10,7 +10,7 @@
     cursor: pointer;
     border: 0;
 }
-.text-light-gray{
+.text-light-gray , .crad-title{
     color: #727272;
 }
 header{
@@ -23,7 +23,7 @@ nav{
  align-items: center;
 }
 
-.nav-titel{
+.section-titel{
     font-size: 2.8rem;
     color: #131313;
     font-weight: 700;
@@ -89,20 +89,63 @@ main{
     color: #ff900e;
     font-weight: 700;
  }
+
+.facts-crad-container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.facts-crad-container .crad{
+    border-radius: 8px;
+    border: 1px solid #ff900e;
+    text-align: center;
+    padding:30px;
+}
+.facts-crad-container .crad-title{
+    width: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+.facts-crad-container .crad-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+
+}
+.Sponsors{
+    text-align: center;
+}
+.sponsore-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
+    gap: 30px;
+}
+.sponsore-img-containe img{
+    width: 165px;
+}
+ /* media fill */
  @media screen and (max-width:576px) {
     hedar{
      padding:20px;
      margin: 0 ;
     } 
 .contenar,
-    nav {
+    nav,
+    .facts-crad-container , .sponsore-img-container 
+    {
      flex-direction: column;
     }
     .team-img-contenar{ 
         grid-template-columns: repeat(1, 1fr);
 
     }
-    .teams-contint{
+    .teams-contint, .facts-crad-container{
         padding: 0 20px;
+    }
+    .facts-crad-container{
+        gap: 20px;
     }
 }
