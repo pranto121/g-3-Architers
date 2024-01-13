@@ -1,0 +1,108 @@
+
+
+/* *font-family : 'Work Sans', sans-serif; */
+.praymary-btn{
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.25rem;
+    background-color: #ff900e ;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
+}
+.text-light-gray{
+    color: #727272;
+}
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+nav{
+    display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.nav-titel{
+    font-size: 2.8rem;
+    color: #131313;
+    font-weight: 700;
+}
+
+nav > ul{
+    display: flex;
+}
+nav li {
+    list-style: none ;
+    margin-right: 30px;
+    font-weight:500 ;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+}
+
+.baner-content{
+    min-width: 800;
+    text-align: center;
+    margin: o auto;
+}
+.baner-titel{
+    font-size:4rem; 
+    font-weight: 700;
+    color: #131313;
+}
+
+
+.baner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+
+main{
+    max-width: 1400px;
+    margin: 70px auto;
+}
+.contenar{
+    display: flex;
+    align-items: center;
+}
+.team-img-contenar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-contint{
+    padding: 0 70px;
+}
+.teams-titel{
+    font-size: 2.8rem;
+}
+.teams-titel .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+ .teams-titel .text-features{
+    color: #ff900e;
+    font-weight: 700;
+ }
+ @media screen and (max-width:576px) {
+    hedar{
+     padding:20px;
+     margin: 0 ;
+    } 
+.contenar,
+    nav {
+     flex-direction: column;
+    }
+    .team-img-contenar{ 
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .teams-contint{
+        padding: 0 20px;
+    }
+}
